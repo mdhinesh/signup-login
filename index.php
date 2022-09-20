@@ -5,7 +5,9 @@
         $user = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM userdb WHERE email = $email"));
     }
     else{
+        session_destroy();
         header("Location: login.php");
+        exit;
     }
 ?>
 
