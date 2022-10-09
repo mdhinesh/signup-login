@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!-- CSS only -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+   <!-- Ajax and jquery -->
+   <script 
+      src="https://code.jquery.com/jquery-3.3.1.js" 
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" 
+      crossorigin="anonymous">
+   </script>
+   <script src="loginscript.js"></script> s
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+   <link rel="stylesheet" href="./css/style.css">
+   <title>Login page</title>
+   
+</head>
+<body>
+   <div class="container">
+      <form>
+         <h1>Login</h1>
+         <div class="row mb-3">
+            <label for="" class="col-sm-2 col-form-label">Email: </label>
+            <input type="email" name="email" class="form-control" id="email">
+         </div>
+         <div class="row mb-3">
+            <label for="" class="col-sm-2 col-form-label">Password: </label>
+            <input type="password" name="password" class="form-control" id="password">
+         </div>
+         <input type="hidden" name="action" id="action" value="login">
+         <button type="submit" id="login" class="btn btn-primary" value="submit">Login</button><br><br>
+         <span id="redirect">New user <a href="signup.html">signup</a></span>
+      </form>
+   </div>   
+</body>
+</html>
